@@ -1,0 +1,39 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+.carousel img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-item {
+  position: relative;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+}
+.carousel .carousel-caption {
+  margin-bottom: 10rem;
+}
+.carousel .carousel-caption h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 5px 2px 3px #171717;
+  font-size: 45px;
+  font-weight: 700;
+  justify-content: center;
+}
+.carousel .carousel-caption button {
+  position: relative;
+  margin-top: 1rem;
+  box-shadow: 5px 4px 4px #171717;
+  padding: 0.6rem 2.1rem;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

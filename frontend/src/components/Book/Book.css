@@ -1,0 +1,25 @@
+.book-item {
+  position: relative;
+}
+.book-item .book-image {
+  position: relative;
+}
+.book-image img {
+  width: 250px;
+  height: 350px;
+}
+.book-item .book-title {
+  padding: 0 8px;
+  transition: all 0.3s;
+  text-align: center;
+}
+.book-item .book-title p {
+  color: #171717;
+  text-align: center;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 0;
+}
