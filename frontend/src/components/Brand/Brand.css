@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: 30px;
   padding: 30px 0;
-  border: 1px solid #000000;
+  border: 3px solid rgb(1, 82, 180);
   background-color: #fff;
 }
 .brand .brand-item {
@@ -12,8 +12,8 @@
 }
 .brand .brand-item img {
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
 }
 .brand .slick-prev,
 .brand .slick-next {

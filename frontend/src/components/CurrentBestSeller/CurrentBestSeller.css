@@ -1,16 +1,25 @@
 .current-bestsellers {
   position: relative;
-  padding: 0 30px;
+  background-color: #fff;
 }
-.current-bestsellers .section-header {
-  margin-bottom: 20px;
+.section-header {
+  width: 100%;
   padding: 20px 30px 15px 30px;
+  border-bottom: 2px solid #171717;
+  /* color: rgb(13, 82, 192); */
+  color: red;
+}
+.section-header i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
 }
 .book .section-header {
+  width: 100%;
   margin: 30px 0;
   padding: 20px 30px 15px 30px;
 }
 .book .section-header h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }

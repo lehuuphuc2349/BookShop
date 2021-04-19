@@ -1,13 +1,15 @@
 import React from "react";
-import hotdeal from "../../images/hotdeal.png";
-import "./Book.css";
-function Book() {
+import "./BookFlashSale.css";
+function BookFlashSale() {
   return (
     <div className="book-item">
-      <div className="hotdeal">
+      {/* <div className="hotdeal">
         <img src={hotdeal} alt="" />
-      </div>
+      </div> */}
       <div className="book-image">
+        <div className="label-sale">
+          <span>23%</span>
+        </div>
         <a href="#">
           <img
             src="https://allitbooks.net/images/1148-beginning-programming-cpp-for-dummies-2nd-edition.jpg"
@@ -21,7 +23,8 @@ function Book() {
       </div>
       <div class="book-price">
         <h3>
-          <span>$</span>99
+          <span className="old-price">$99</span>
+          <span className="new-price">$60</span>
         </h3>
         <button class="btn" href="">
           <i class="fa fa-shopping-cart"></i> ADD TO CART
@@ -31,4 +34,4 @@ function Book() {
   );
 }
 
-export default Book;
+export default BookFlashSale;
