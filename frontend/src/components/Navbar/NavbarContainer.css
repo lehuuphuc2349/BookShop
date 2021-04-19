@@ -64,6 +64,7 @@
   border-radius: 0;
   box-shadow: 1px solid #171717;
 }
+
 .navbar .form-inline button {
   background-color: rgb(13, 92, 182);
   border-radius: 0;
@@ -72,4 +73,12 @@
   margin: 0;
   text-align: center;
   transition: 0.5s all ease;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 40px;
+  height: 40px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
 }

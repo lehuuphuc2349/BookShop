@@ -1,25 +1,87 @@
 .book-item {
   position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease-out;
 }
 .book-item .book-image {
   position: relative;
 }
 .book-image img {
-  width: 250px;
-  height: 350px;
+  width: 170px;
+  height: 200px;
 }
 .book-item .book-title {
   padding: 0 8px;
   transition: all 0.3s;
   text-align: center;
+  margin-top: 0.9rem;
 }
-.book-item .book-title p {
+.book-item .book-title h5 {
   color: #171717;
   text-align: center;
+  text-transform: uppercase;
   align-items: center;
   line-height: 1;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
-  letter-spacing: 0;
+  justify-content: center;
+}
+.book-item .book-image {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.book-item:hover {
+  border: 1px solid rgb(13, 92, 180);
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.book-item .book-image a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #171717;
+}
+.book-item .book-image .book-action {
+  margin-top: 0.8rem;
+}
+.book-item .book-image .book-action a {
+  padding: 0.8rem;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 7px 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(13, 92, 182);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.book-item .book-price {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.book-item .book-price h3 {
+  color: red;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+.book-item .book-price .btn {
+  border: 1px solid #171717;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.book-item .book-price .btn:hover {
+  background-color: rgb(239, 239, 239);
 }

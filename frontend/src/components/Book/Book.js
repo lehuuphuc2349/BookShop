@@ -3,16 +3,6 @@ import "./Book.css";
 function Book() {
   return (
     <div className="book-item">
-      <div className="book-title">
-        <p>Book Name</p>
-        {/* <div class="ratting">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-        </div> */}
-      </div>
       <div className="book-image">
         <a href="#">
           <img
@@ -20,25 +10,17 @@ function Book() {
             alt=""
           />
         </a>
-        <div class="product-action">
-          <a href="#">
-            <i class="fa fa-cart-plus"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-heart"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-search"></i>
-          </a>
-        </div>
+      </div>
+      <div className="book-title">
+        <h5>Beginning Programming with C++ For Dummies, 2nd Edition</h5>
       </div>
       <div class="book-price">
         <h3>
           <span>$</span>99
         </h3>
-        <a class="btn" href="">
-          <i class="fa fa-shopping-cart"></i>ADD TO CART
-        </a>
+        <button class="btn" href="">
+          <i class="fa fa-shopping-cart"></i> ADD TO CART
+        </button>
       </div>
     </div>
   );

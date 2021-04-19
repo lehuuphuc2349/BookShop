@@ -9,11 +9,19 @@ function CurrentBestSeller() {
         <div className="section-header">
           <h1>Current Bestsellers</h1>
         </div>
-        <Row className="align-items-center" md={4}>
-          <Book />
-          <Book />
-          <Book />
-          <Book />
+        <Row className="align-items-center">
+          <Col md={3}>
+            <Book />
+          </Col>
+          <Col md={3}>
+            <Book />
+          </Col>
+          <Col md={3}>
+            <Book />
+          </Col>
+          <Col md={3}>
+            <Book />
+          </Col>
         </Row>
       </Container>
     </div>

@@ -31,9 +31,16 @@
 .carousel .carousel-caption button {
   position: relative;
   margin-top: 1rem;
-  box-shadow: 5px 4px 4px #171717;
-  padding: 0.6rem 2.1rem;
-  border-radius: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
+  padding: 0.8rem 3.8rem;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  background-color: #009cff;
+  border-color: #009cff;
+  transition: 0.5s all;
+}
+.carousel .carousel-caption button:hover {
+  background-color: rgb(13, 92, 182);
 }

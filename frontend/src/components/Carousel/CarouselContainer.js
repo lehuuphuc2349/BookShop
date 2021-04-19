@@ -16,7 +16,7 @@ function CarouselContainer() {
         />
         <Carousel.Caption>
           <h1>Welcome to ITbookshop online</h1>
-          <Button variant="primary">STARTED</Button>
+          <Button variant="primary">Started</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,7 +27,7 @@ function CarouselContainer() {
         />
         <Carousel.Caption>
           <h1>Welcome to ITbookshop online</h1>
-          <Button variant="primary">STARTED</Button>
+          <Button variant="primary">Started</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -38,7 +38,7 @@ function CarouselContainer() {
         />
         <Carousel.Caption>
           <h1>Welcome to ITbookshop online</h1>
-          <Button variant="primary">STARTED</Button>
+          <Button variant="primary">Started</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
