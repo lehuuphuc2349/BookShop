@@ -7,12 +7,11 @@
 .book-item .book-image {
   position: relative;
 }
-.book-image img {
-  width: 170px;
-  height: 200px;
+.book-item .book-image img {
+  width: 110px;
+  height: 160px;
 }
 .book-item .book-title {
-  padding: 0 8px;
   transition: all 0.3s;
   text-align: center;
   margin-top: 0.9rem;
@@ -23,17 +22,16 @@
   text-transform: uppercase;
   align-items: center;
   line-height: 1;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 0.8rem;
   justify-content: center;
 }
-.book-item .book-image {
+/* .book-item .book-image {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 .book-item:hover {
   background-color: #fff;
   transform: scale(1.1);

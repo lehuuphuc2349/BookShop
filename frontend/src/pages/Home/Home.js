@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Banner from "../../components/Banner/Banner";
 import Brand from "../../components/Brand/Brand";
 import CarouselContainer from "../../components/Carousel/CarouselContainer";
 import CurrentBestSeller from "../../components/CurrentBestSeller/CurrentBestSeller";
@@ -10,12 +11,13 @@ function Home() {
   return (
     <>
       <CarouselContainer />
-      <Brand />
       <Container>
-        <Fact />
+        <Banner />
         <CurrentBestSeller />
+        <Fact />
         <FlashSale />
       </Container>
+      <Brand />
     </>
   );
 }

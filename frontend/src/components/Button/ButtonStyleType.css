@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(8, 80, 180);
+  --primary: #2a2a72;
 }
 .btn {
   margin-top: 2rem;
@@ -10,13 +10,16 @@
   cursor: pointer;
 }
 .btn--primary {
-  background-color: var(--primary);
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   color: #fff;
   border: var(--primary);
   border-radius: 25px;
 }
+.btn--primary:hover {
+  transform: scale(1.1);
+}
 .btn--outline {
-  background-color: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
   transition: all 0.3s ease-out;

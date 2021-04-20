@@ -3,8 +3,6 @@
   margin-top: 1rem;
   background-color: #fff;
 }
-.flash-sale .section-header h1 {
-}
 .flash-sale .section-header h1 span {
   color: #171717;
   font-weight: normal;
@@ -14,4 +12,27 @@
   content: "";
   border-left: 2px solid #171717;
   margin: 0 1rem;
+}
+.time-current-sale {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  color: #171717;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.time-current-sale .time-sale-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.time-current-sale .time-sale-item p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.time-current-sale .active {
+  color: red;
 }

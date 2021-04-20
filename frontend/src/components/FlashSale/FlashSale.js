@@ -14,7 +14,39 @@ function FlashSale() {
             <span>{/* Countdow timer: <CountdowTimer /> */}</span>
           </h1>
         </div>
+        <div className="time-current-sale">
+          <Row className="align-items-center">
+            <Col md={3} sm={12} className="time-sale-item active">
+              <h3>09:00</h3>
+              <p>Current</p>
+            </Col>
+            <Col md={3} sm={12} className="time-sale-item ">
+              <h3>10:00</h3>
+              <p>Countdown</p>
+            </Col>
+            <Col md={3} sm={12} className="time-sale-item ">
+              <h3>11:00</h3>
+              <p>Countdown</p>
+            </Col>
+            <Col md={3} sm={12} className="time-sale-item ">
+              <h3>12:00</h3>
+              <p>Coutndown</p>
+            </Col>
+          </Row>
+        </div>
         <Row className="align-items-center">
+          <Col md={3} sm={12}>
+            <BookFlashSale />
+          </Col>
+          <Col md={3} sm={12}>
+            <BookFlashSale />
+          </Col>
+          <Col md={3} sm={12}>
+            <BookFlashSale />
+          </Col>
+          <Col md={3} sm={12}>
+            <BookFlashSale />
+          </Col>
           <Col md={3} sm={12}>
             <BookFlashSale />
           </Col>

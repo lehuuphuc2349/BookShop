@@ -47,11 +47,10 @@ function NavbarContainer() {
           <Nav className="ml-auto">
             <Nav.Link href="/">
               <i className="fas fa-user"></i>
-              Login/Register
             </Nav.Link>
             <Nav.Link>
               <i className="fas fa-shopping-cart"></i>
-              Cart <span>(0)</span>
+              <span>(0)</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
