@@ -1,7 +1,7 @@
 const books = [
   {
     name: "Beginning Programming with C++ For Dummies, 2nd Edition",
-    author: " Stephen R. Davis",
+    author: "Stephen R. Davis",
     year: "2018",
     pages: 456,
     category: "Programming Language",

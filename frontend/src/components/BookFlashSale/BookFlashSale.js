@@ -3,14 +3,11 @@ import "./BookFlashSale.css";
 function BookFlashSale() {
   return (
     <div className="book-item">
-      {/* <div className="hotdeal">
-        <img src={hotdeal} alt="" />
-      </div> */}
       <div className="book-image">
         <div className="label-sale">
           <span>23%</span>
         </div>
-        <a href="#">
+        <a href="/book/111">
           <img
             src="https://allitbooks.net/images/1148-beginning-programming-cpp-for-dummies-2nd-edition.jpg"
             alt=""

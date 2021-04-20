@@ -1,12 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Slider from "react-slick";
-import icon1 from "../../images/icon1.png";
-import icon2 from "../../images/icon2.png";
-import icon3 from "../../images/icon3.png";
-import icon4 from "../../images/icon4.png";
-import icon5 from "../../images/icon5.png";
-import icon6 from "../../images/icon6.png";
+import icon1 from "../../images/icon1.jpg";
+import icon2 from "../../images/icon2.jpg";
+import icon3 from "../../images/icon3.jpg";
+import icon4 from "../../images/icon4.jpg";
+import icon5 from "../../images/icon5.jpg";
+import icon6 from "../../images/icon6.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Brand.css";

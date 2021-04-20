@@ -1,0 +1,83 @@
+.bookpage {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  margin: 1rem auto;
+}
+.bookpage .left-info {
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+}
+.bookpage .left-info img {
+  width: 250px;
+  height: 320px;
+  margin-top: 1.5rem;
+}
+.bookpage .back {
+  position: relative;
+  font-size: 0.8rem;
+}
+.bookpage .back a::before {
+  content: "\f100";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 0.2rem;
+}
+.bookpage .back a {
+  color: #565959;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.bookpage .right-info {
+  width: 100%;
+  margin: 1rem auto;
+  border-left: 1px solid rgb(242, 242, 242);
+}
+.bookpage .right-info h4 {
+  margin: 0.6rem;
+  font-weight: bold;
+}
+.bookpage .right-info p span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.bookpage .right-info p {
+  font-size: 1rem;
+  margin: 0.6rem;
+  letter-spacing: 0;
+}
+.bookpage .right-info select {
+  padding: 0.1rem 2rem;
+  border: 2px solid #171717;
+}
+hr {
+  font-size: 0.5rem;
+  color: #565959;
+}
+.bookpage .right-info button {
+  color: #fff;
+  font-size: 1rem;
+  background-color: rgb(255, 57, 69);
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  margin: 0.9rem;
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  transition: 0.5s all;
+}
+.bookpage .right-info button:last-child {
+  background-color: rgb(8, 82, 182);
+}
+.bookpage .right-info button:hover {
+  opacity: 0.8;
+}

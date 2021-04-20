@@ -22,15 +22,15 @@ function FlashSale() {
             </Col>
             <Col md={3} sm={12} className="time-sale-item ">
               <h3>10:00</h3>
-              <p>Countdown</p>
+              <p>Upcoming</p>
             </Col>
             <Col md={3} sm={12} className="time-sale-item ">
               <h3>11:00</h3>
-              <p>Countdown</p>
+              <p>Upcoming</p>
             </Col>
             <Col md={3} sm={12} className="time-sale-item ">
               <h3>12:00</h3>
-              <p>Coutndown</p>
+              <p>Upcoming</p>
             </Col>
           </Row>
         </div>

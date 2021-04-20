@@ -2,11 +2,12 @@
   position: relative;
   width: 100%;
   min-height: 400px;
+  margin-top: 0.9rem;
 }
 .carousel img {
   object-fit: cover;
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -17,7 +18,7 @@
   justify-content: center;
 }
 .carousel .carousel-caption {
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 .carousel .carousel-caption h1 {
   text-align: center;

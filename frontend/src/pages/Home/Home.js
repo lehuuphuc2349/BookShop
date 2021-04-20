@@ -10,14 +10,13 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <CarouselContainer />
       <Container>
+        <CarouselContainer />
         <Banner />
         <CurrentBestSeller />
         <Fact />
         <FlashSale />
       </Container>
-      <Brand />
     </>
   );
 }
