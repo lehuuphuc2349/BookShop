@@ -7,7 +7,7 @@ function BookFlashSale() {
         <div className="label-sale">
           <span>23%</span>
         </div>
-        <a href="/book/111">
+        <a href="/books/111">
           <img
             src="https://allitbooks.net/images/1148-beginning-programming-cpp-for-dummies-2nd-edition.jpg"
             alt=""

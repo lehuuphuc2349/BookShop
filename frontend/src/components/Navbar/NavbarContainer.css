@@ -2,8 +2,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  padding: 1rem;
-  background-color: rgb(1, 127, 255) !important;
+  background-color: rgb(42, 81, 121) !important;
   z-index: 999;
 }
 .navbar .navbar-brand {
@@ -59,7 +58,7 @@
   margin: 0;
 }
 .navbar .form-inline input {
-  width: 400px;
+  width: 450px;
   margin: 0;
   border-radius: 0;
   box-shadow: 1px solid #171717;
@@ -73,6 +72,11 @@
   margin: 0;
   text-align: center;
   transition: 0.5s all ease;
+  border: none;
+  outline: none;
+}
+.navbar .form-inline button:hover {
+  opacity: 0.6;
 }
 .carousel-control-prev span,
 .carousel-control-next span {

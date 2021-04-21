@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import BookDetails from "../../components/BookDetails/BookDetails";
 import CurrentBestSeller from "../../components/CurrentBestSeller/CurrentBestSeller";
 import "./BookPage.css";
 function BookPage() {
@@ -45,6 +46,10 @@ function BookPage() {
               <button>ADD TO CART</button>
               <button>BUY NOW</button>
             </p>
+          </Col>
+          <Col md={12}>
+            <hr />
+            <BookDetails />
           </Col>
         </Row>
       </div>

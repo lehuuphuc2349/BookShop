@@ -31,6 +31,7 @@ function NavbarContainer() {
             onMouseEnter={showDropdown}
             onMouseLeave={hideShow}
           >
+            <NavDropdown.Item href="/books">All Books</NavDropdown.Item>
             <NavDropdown.Item>Programming Languages</NavDropdown.Item>
             <NavDropdown.Item>Web Development</NavDropdown.Item>
             <NavDropdown.Item>Database</NavDropdown.Item>
@@ -48,7 +49,7 @@ function NavbarContainer() {
             <Nav.Link href="/">
               <i className="fas fa-user"></i>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="/cart">
               <i className="fas fa-shopping-cart"></i>
               <span>(0)</span>
             </Nav.Link>

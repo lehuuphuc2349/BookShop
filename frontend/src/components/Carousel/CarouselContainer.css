@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 400px;
-  margin-top: 0.9rem;
+  margin-top: 0.3rem;
 }
 .carousel img {
   object-fit: cover;

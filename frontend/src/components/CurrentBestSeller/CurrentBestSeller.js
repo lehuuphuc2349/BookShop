@@ -28,14 +28,13 @@ function CurrentBestSeller() {
           </Col>
         </Row>
         <div className="d-flex justify-content-center">
-          {button && (
-            <ButtonStyleType
-              buttonStyle="btn--primary"
-              buttonSize="btn--medium"
-            >
-              LOAD MORE
-            </ButtonStyleType>
-          )}
+          <ButtonStyleType
+            buttonStyle="btn--primary"
+            buttonSize="btn--medium"
+            onClick="/books"
+          >
+            <a href="/books">LOAD MORE</a>
+          </ButtonStyleType>
         </div>
       </Container>
     </div>

@@ -6,6 +6,8 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import BookPage from "./pages/BookPage/BookPage";
 import Brand from "./components/Brand/Brand";
+import Books from "./pages/Books/Books";
+import Cart from "./pages/Cart/Cart";
 function App() {
   return (
     <>
@@ -13,7 +15,9 @@ function App() {
         <NavbarContainer />
         <Switch>
           <Route exact path="/" component={Home} />u
-          <Route exact path="/book/:id" component={BookPage} />
+          <Route exact path="/books/:id" component={BookPage} />
+          <Route exact path="/books" component={Books} />
+          <Route exact path="/cart" component={Cart} />
         </Switch>
         <Brand />
         <Footer />

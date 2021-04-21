@@ -16,6 +16,10 @@
   border: var(--primary);
   border-radius: 25px;
 }
+.btn--primary a {
+  color: #fff;
+  text-decoration: none;
+}
 .btn--primary:hover {
   transform: scale(1.1);
 }

@@ -60,9 +60,13 @@ function FlashSale() {
             <BookFlashSale />
           </Col>
         </Row>
-        <div className="d-flex justify-content-center">
-          <ButtonStyleType buttonStyle="btn--primary" buttonSize="btn--medium">
-            LOAD MORE
+        <div className="d-flex justify-content-center" href="/books">
+          <ButtonStyleType
+            buttonStyle="btn--primary"
+            buttonSize="btn--medium"
+            onClick="/books"
+          >
+            <a href="/books">LOAD MORE</a>
           </ButtonStyleType>
         </div>
       </Container>

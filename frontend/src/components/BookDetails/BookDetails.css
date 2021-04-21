@@ -1,0 +1,23 @@
+.book-details {
+  position: relative;
+  margin-top: 0.9rem;
+  width: 100%;
+}
+.book-details .book-details-title {
+  margin-left: 1rem;
+}
+.book-details .book-details-title h2 {
+  font-size: 1.5rem;
+}
+.book-details .book-details-info {
+  margin-left: 3.5rem;
+  line-height: 2.5;
+}
+.book-details .book-details-info .list-item {
+  display: block;
+  list-style: none;
+  font-size: 1rem;
+}
+.book-details .book-details-info .list-item .text-bold {
+  font-weight: 700;
+}

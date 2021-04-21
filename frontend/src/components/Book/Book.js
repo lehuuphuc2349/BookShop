@@ -8,7 +8,7 @@ function Book() {
         <img src={hotdeal} alt="" />
       </div>
       <div className="book-image">
-        <a href="/book/111">
+        <a href="/books/111">
           <img
             src="https://allitbooks.net/images/1148-beginning-programming-cpp-for-dummies-2nd-edition.jpg"
             alt=""
