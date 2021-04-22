@@ -1,27 +1,25 @@
 import React from "react";
 import hotdeal from "../../images/hotdeal.png";
 import "./Book.css";
-function Book() {
+function Book({ imageUrl, name, price, bookId }) {
   return (
     <div className="book-item">
       <div className="hotdeal">
         <img src={hotdeal} alt="" />
       </div>
       <div className="book-image">
-        <a href="/books/111">
-          <img
-            src="https://allitbooks.net/images/1148-beginning-programming-cpp-for-dummies-2nd-edition.jpg"
-            alt=""
-          />
+        <a href={`/books/${bookId}`}>
+          <img src={imageUrl} alt={name} />
         </a>
       </div>
 
       <div className="book-title">
-        <h5>Beginning Programming with C++ For Dummies, 2nd Edition</h5>
+        <h5>{name}</h5>
       </div>
       <div class="book-price">
         <h3>
-          <span>$</span>99
+          <span>$</span>
+          {price}
         </h3>
         <button class="btn" href="">
           <i class="fa fa-shopping-cart"></i> ADD TO CART

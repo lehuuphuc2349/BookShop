@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useSelector, useDispatch } from "react-redux";
 import BookFlashSale from "../BookFlashSale/BookFlashSale";
-import CountdowTimer from "../CountdowTimer/CountdowTimer";
+import { getBooks as listBooks } from "../../redux/action/bookActions";
 import { ButtonStyleType } from "../Button/ButtonStyleType";
 import "./FlashSale.css";
 function FlashSale() {
+  const dispatch = useDispatch();
+  const getBooks = useSelector((state) => state.getBooks);
+  const { books, loading, error } = getBooks;
+  useEffect(() => {
+    dispatch(listBooks());
+  }, [dispatch]);
   return (
     <div className="flash-sale book">
       <Container>
@@ -35,30 +42,23 @@ function FlashSale() {
           </Row>
         </div>
         <Row className="align-items-center">
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
-          <Col md={3} sm={12}>
-            <BookFlashSale />
-          </Col>
+          {loading ? (
+            <h3>Loading... </h3>
+          ) : error ? (
+            <h3>{error}</h3>
+          ) : (
+            books.slice(4, 12).map((book) => (
+              <Col md={3} sm={12}>
+                <BookFlashSale
+                  key={book._id}
+                  bookId={book._id}
+                  name={book.name}
+                  price={book.price}
+                  imageUrl={book.imageUrl}
+                />
+              </Col>
+            ))
+          )}
         </Row>
         <div className="d-flex justify-content-center" href="/books">
           <ButtonStyleType

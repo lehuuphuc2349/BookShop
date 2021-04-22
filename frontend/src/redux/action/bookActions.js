@@ -15,7 +15,7 @@ export const getBooks = () => async (dispatch) => {
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
-          : error.response,
+          : error.message,
     });
   }
 };
@@ -33,7 +33,7 @@ export const getBookDetails = (id) => async (dispatch) => {
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
-          : error.reponse,
+          : error.message,
     });
   }
 };

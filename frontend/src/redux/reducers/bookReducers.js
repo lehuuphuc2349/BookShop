@@ -9,8 +9,8 @@ export const getBooksReducer = (state = { books: [] }, action) => {
       };
     case actionType.GET_BOOKS_SUCCESS:
       return {
-        loading: false,
         books: action.payload,
+        loading: false,
       };
     case actionType.GET_BOOKS_FAIL: {
       return {
