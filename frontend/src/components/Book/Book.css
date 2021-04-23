@@ -23,15 +23,9 @@
   align-items: center;
   line-height: 1;
   font-size: 0.8rem;
+  font-weight: 400;
   justify-content: center;
 }
-/* .book-item .book-image {
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 .book-item:hover {
   background-color: #fff;
   transform: scale(1.1);

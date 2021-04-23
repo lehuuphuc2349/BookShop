@@ -53,6 +53,15 @@ function Cart() {
               <button type="submit">Procced to checkout</button>
             </p>
           </Col>
+          <Col md={12} className="tutorial">
+            <p>
+              The price and availability of items at ITBookShop.com are subject
+              to change. The Cart is a temporary place to store a list of your
+              items and reflects each item's most recent price. Do you have a
+              gift card or promotional code? We'll ask you to enter your claim
+              code when it's time to pay.
+            </p>
+          </Col>
         </Row>
       </div>
     </Container>
