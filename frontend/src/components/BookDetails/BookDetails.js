@@ -12,9 +12,6 @@ function BookDetails() {
             <span className="text-bold">Languages : </span> English
           </li>
           <li className="item">
-            <span className="text-bold">Pages : </span> 466
-          </li>
-          <li className="item">
             <span className="text-bold">Weight : </span> 1.1 pounds
           </li>
           <li className="item">

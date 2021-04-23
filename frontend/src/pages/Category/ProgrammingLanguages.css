@@ -1,0 +1,15 @@
+.programming-languages {
+  position: relative;
+  margin-top: 2rem;
+}
+.programming-languages .title {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  text-align: center;
+  border-bottom: 2px solid #171717;
+}
+.programming-languages .title h2 {
+  font-weight: 700;
+}

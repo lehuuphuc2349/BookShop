@@ -20,9 +20,6 @@ function BookFlashSale({ imageUrl, name, price, bookId }) {
           <span className="old-price">${price}</span>
           <span className="new-price">$60</span>
         </h3>
-        <button class="btn" href="">
-          <i class="fa fa-shopping-cart"></i> ADD TO CART
-        </button>
       </div>
     </div>
   );

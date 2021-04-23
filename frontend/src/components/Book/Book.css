@@ -67,10 +67,11 @@
   margin-top: 1rem;
 }
 .book-item .book-price h3 {
-  color: rgba(0, 0, 0, 0.4);
+  color: #171717 !important;
   font-size: 2rem;
   padding: 0.2rem;
 }
+
 .book-item .book-price .btn {
   border: 1px solid #171717;
   margin: 0 auto;

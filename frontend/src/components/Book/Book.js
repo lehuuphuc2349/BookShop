@@ -21,9 +21,6 @@ function Book({ imageUrl, name, price, bookId }) {
           <span>$</span>
           {price}
         </h3>
-        <button class="btn" href="">
-          <i class="fa fa-shopping-cart"></i> ADD TO CART
-        </button>
       </div>
     </div>
   );

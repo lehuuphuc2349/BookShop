@@ -9,6 +9,7 @@ import {
   NavDropdown,
   Row,
 } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import "./NavbarContainer.css";
 function NavbarContainer() {
   const [show, setShow] = useState(false);
@@ -17,6 +18,11 @@ function NavbarContainer() {
   };
   const hideShow = (event) => {
     setShow(false);
+  };
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
+  const getCount = () => {
+    return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
   return (
     <Navbar bg="light" expand="md" className="navbar">
@@ -32,11 +38,17 @@ function NavbarContainer() {
             onMouseLeave={hideShow}
           >
             <NavDropdown.Item href="/books">All Books</NavDropdown.Item>
-            <NavDropdown.Item>Programming Languages</NavDropdown.Item>
-            <NavDropdown.Item>Web Development</NavDropdown.Item>
-            <NavDropdown.Item>Database</NavDropdown.Item>
-            <NavDropdown.Item>Security</NavDropdown.Item>
-            <NavDropdown.Item>Algorithms and data structures</NavDropdown.Item>
+            <NavDropdown.Item href="/programming-languages">
+              Programming Languages
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/web-development">
+              Web Development
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/database">Database</NavDropdown.Item>
+            <NavDropdown.Item href="/networking">Networking</NavDropdown.Item>
+            <NavDropdown.Item href="/algorithms-data">
+              Algorithms and data structures
+            </NavDropdown.Item>
           </NavDropdown>
           <Form inline>
             <FormControl type="text" placeholder="Search books..." />
@@ -51,7 +63,7 @@ function NavbarContainer() {
             </Nav.Link>
             <Nav.Link href="/cart">
               <i className="fas fa-shopping-cart"></i>
-              <span>(0)</span>
+              <span>({getCount()})</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import BookDetails from "../../components/BookDetails/BookDetails";
 import CurrentBestSeller from "../../components/CurrentBestSeller/CurrentBestSeller";
 import { getBookDetails } from "../../redux/action/bookActions";
+import { addToCart } from "../../redux/action/cartActions";
 import "./BookPage.css";
 function BookPage({ match, history }) {
   const [qty, setQty] = useState(1);
@@ -15,6 +16,10 @@ function BookPage({ match, history }) {
       dispatch(getBookDetails(match.params.id));
     }
   }, [dispatch, match, book]);
+  const addToCartHandler = () => {
+    dispatch(addToCart(book._id, qty));
+    history.push("/cart");
+  };
   return (
     <Container>
       <div className="bookpage">
@@ -39,10 +44,11 @@ function BookPage({ match, history }) {
                 <p>
                   Price: <span>${book.price}</span>
                 </p>
+                <p>Pages: {book.pages}</p>
                 <p>
                   Status: {book.countInStock > 0 ? "In Stock" : "Out Of Stock"}
                 </p>
-
+                <p>Category: {book.category}</p>
                 <p>{book.bookDescription}</p>
                 <p>
                   Quantity: {""}
@@ -55,7 +61,7 @@ function BookPage({ match, history }) {
                   </select>
                 </p>
                 <p>
-                  <button>ADD TO CART</button>
+                  <button onClick={addToCartHandler}>ADD TO CART</button>
                   <button>BUY NOW</button>
                 </p>
               </Col>
@@ -63,7 +69,6 @@ function BookPage({ match, history }) {
           )}
 
           <Col md={12}>
-            <hr />
             <BookDetails />
           </Col>
         </Row>
