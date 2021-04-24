@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Container,
@@ -9,9 +9,43 @@ import {
   NavDropdown,
   Row,
 } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { getBooks as listBooks } from "../../redux/action/bookActions";
 import "./NavbarContainer.css";
 function NavbarContainer() {
+  const history = useHistory();
+  const dispatch = useDispatch();
+  const getAllBooks = useSelector((state) => state.getBooks);
+  const { books } = getAllBooks;
+  useEffect(() => {
+    dispatch(listBooks());
+  }, [dispatch]);
+  useEffect(() => {
+    getNameBooks();
+  });
+  // Search Book
+  function searchBook() {
+    var searchIn = document.getElementById("input-search").value;
+    var resultSearch = books.filter((book) => {
+      return book.name === searchIn;
+    });
+    if (resultSearch.length === 0) {
+      alert("No found book");
+    } else {
+      var idResult = resultSearch[0]._id;
+      console.log(resultSearch);
+      console.log(idResult);
+      history.push(`/books/${idResult}`);
+    }
+  }
+  function getNameBooks() {
+    const nameBooks = [];
+    books.map((book) => {
+      nameBooks.push(book.name);
+    });
+    console.log(nameBooks);
+  }
   const [show, setShow] = useState(false);
   const showDropdown = (event) => {
     setShow(!show);
@@ -51,8 +85,12 @@ function NavbarContainer() {
             </NavDropdown.Item>
           </NavDropdown>
           <Form inline>
-            <FormControl type="text" placeholder="Search books..." />
-            <Button type="button">
+            <FormControl
+              type="text"
+              id="input-search"
+              placeholder="Search books..."
+            />
+            <Button type="button" onClick={searchBook}>
               <i className="fa fa-search"></i> Search
             </Button>
           </Form>
