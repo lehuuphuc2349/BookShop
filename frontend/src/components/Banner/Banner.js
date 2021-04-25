@@ -10,16 +10,16 @@ function Banner() {
     <div className="banner">
       <Container fluid>
         <Row className="align-items-center">
-          <Col lg={3} md={3} sm={12} className="banner-item">
+          <Col lg={3} md={3} className="banner-item">
             <img src={banner1} alt="" />
           </Col>
-          <Col lg={3} md={3} sm={12} className="banner-item">
+          <Col lg={3} md={3} className="banner-item">
             <img src={banner2} alt="" />
           </Col>
-          <Col lg={3} md={3} sm={12} className="banner-item">
+          <Col lg={3} md={3} className="banner-item">
             <img src={banner3} alt="" />
           </Col>
-          <Col lg={3} md={3} sm={12} className="banner-item">
+          <Col lg={3} md={3} className="banner-item">
             <img src={banner4} alt="" />
           </Col>
         </Row>

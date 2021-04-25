@@ -32,7 +32,7 @@
 
 .bookpage .right-info {
   width: 100%;
-  margin: 1rem auto;
+  margin-top: 1rem auto;
   border-left: 1px solid rgb(242, 242, 242);
 }
 .bookpage .right-info h4 {

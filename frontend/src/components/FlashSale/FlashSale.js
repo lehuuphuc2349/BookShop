@@ -23,19 +23,19 @@ function FlashSale() {
         </div>
         <div className="time-current-sale">
           <Row className="align-items-center">
-            <Col md={3} sm={12} className="time-sale-item active">
+            <Col lg={3} md={3} sm={3} xs={3} className="time-sale-item active">
               <h3>09:00</h3>
               <p>Current</p>
             </Col>
-            <Col md={3} sm={12} className="time-sale-item ">
+            <Col lg={3} md={3} sm={3} xs={3} className="time-sale-item ">
               <h3>10:00</h3>
               <p>Upcoming</p>
             </Col>
-            <Col md={3} sm={12} className="time-sale-item ">
+            <Col lg={3} md={3} sm={3} xs={3} className="time-sale-item ">
               <h3>11:00</h3>
               <p>Upcoming</p>
             </Col>
-            <Col md={3} sm={12} className="time-sale-item ">
+            <Col lg={3} md={3} sm={3} xs={3} className="time-sale-item ">
               <h3>12:00</h3>
               <p>Upcoming</p>
             </Col>

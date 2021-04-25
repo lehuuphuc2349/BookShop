@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+  Alert,
   Button,
   Container,
   Form,
@@ -15,6 +16,7 @@ import { getBooks as listBooks } from "../../redux/action/bookActions";
 import "./NavbarContainer.css";
 function NavbarContainer() {
   const history = useHistory();
+  const nameBooks = [];
   const dispatch = useDispatch();
   const getAllBooks = useSelector((state) => state.getBooks);
   const { books } = getAllBooks;
@@ -28,10 +30,10 @@ function NavbarContainer() {
   function searchBook() {
     var searchIn = document.getElementById("input-search").value;
     var resultSearch = books.filter((book) => {
-      return book.name === searchIn;
+      return book.name == searchIn;
     });
     if (resultSearch.length === 0) {
-      alert("No found book");
+      alert(`List books: ${nameBooks.map((item) => "\n" + item)}`);
     } else {
       var idResult = resultSearch[0]._id;
       console.log(resultSearch);
@@ -40,7 +42,6 @@ function NavbarContainer() {
     }
   }
   function getNameBooks() {
-    const nameBooks = [];
     books.map((book) => {
       nameBooks.push(book.name);
     });

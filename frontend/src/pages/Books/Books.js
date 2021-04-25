@@ -24,7 +24,7 @@ function Books() {
             <h3>{error}</h3>
           ) : (
             books.map((book) => (
-              <Col md={3}>
+              <Col md={3} xs={6}>
                 <Book
                   key={book._id}
                   bookId={book._id}

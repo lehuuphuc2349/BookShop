@@ -28,7 +28,7 @@ function ProgrammingLanguages() {
                 return book.category == "Programming Language";
               })
             ).map((book) => (
-              <Col md={3}>
+              <Col md={3} xs={6}>
                 <Book
                   key={book._id}
                   bookId={book._id}

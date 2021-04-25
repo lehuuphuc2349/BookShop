@@ -28,7 +28,7 @@ function WebDevelopment() {
                 return book.category == "Web development";
               })
             ).map((book) => (
-              <Col md={3}>
+              <Col md={3} xs={6}>
                 <Book
                   key={book._id}
                   bookId={book._id}

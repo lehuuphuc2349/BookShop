@@ -19,7 +19,6 @@
 .book-item .book-title h5 {
   color: #171717;
   text-align: center;
-  text-transform: uppercase;
   align-items: center;
   line-height: 1;
   font-size: 0.8rem;
@@ -85,4 +84,10 @@
 }
 .hotdeal img {
   width: 120px;
+}
+@media (max-width: 766px) {
+  .book-item:hover {
+    opacity: 0.8;
+    transform: scale(1);
+  }
 }

@@ -36,3 +36,9 @@
 .time-current-sale .active {
   color: red;
 }
+@media (max-width: 766px) {
+  .time-current-sale {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

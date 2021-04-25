@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
-import banner1 from "../../images/banner1.jpg";
-import banner2 from "../../images/banner2.jpg";
-import banner3 from "../../images/banner3.jpg";
 import "./CarouselContainer.css";
 function CarouselContainer() {
   const [index, setIndex] = useState(0);

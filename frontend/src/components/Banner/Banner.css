@@ -17,3 +17,8 @@
   height: 250px;
   border: 2px solid #fff;
 }
+@media (max-width: 992px) {
+  .banner {
+    display: none;
+  }
+}
